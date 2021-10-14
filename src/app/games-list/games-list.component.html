@@ -1,0 +1,12 @@
+<div class="container">
+    <p>games-list works!</p>
+
+     <ul *ngFor='let game of games'>
+        <li>
+           
+            <a [routerLink]="['/game/',game._id]"> {{game.title}}</a>
+        </li>
+    </ul> 
+
+
+</div>
